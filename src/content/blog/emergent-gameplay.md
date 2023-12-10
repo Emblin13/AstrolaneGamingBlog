@@ -12,12 +12,13 @@ description: "A short rant on emergent gameplay"
 ## Table of contents
 
 ## What is Emergent Gameplay?
+Complex gameplay that emerges from the interaction of simple game mechanics. Usually, these new gameplay mechanics emerge from players as they combine multiple simple mechanics to gain an advantage in the game. 
 
 
+Minecraft has many great examples of emergent gameplay:
+![Minecraft CPU](https://www.pcworld.com/wp-content/uploads/2023/04/minecraft-cpu.jpg "") 
 
 
-Emergent gameplay:
-Complex gameplay that emerges from the interaction of simple game mechanics. Usually, these new gameplay mechanics emerge from players as they combine multiple simple mechanics to gain an advantage in the game. Minecraft has many great examples of emergent gameplay:
 Show gif of water pouring down crops in MInecraft
 Image of barricading monsters behind blocks
 In a sense, the game is mostly emergent gameplay. Minecraft provides the player with vast worlds full of interesting th…players too harshly for getting hit, which incentivizes overly safe and boring playstyles, like finding a single powerful strategy for combat encounters and never trying anything else, instead of mixing things up
