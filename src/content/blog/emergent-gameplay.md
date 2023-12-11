@@ -4,119 +4,43 @@ title: Emergent Gameplay
 featured: true
 draft: false
 tags:
-    - docs
-    - guide
-heroImage: ""
+    - gaming
+    - blog
+heroImage: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/fc/MC_key_art.jpg/revision/latest/scale-to-width-down/1000?cb=20210912155025"
 description: "A short rant on emergent gameplay"
 ---
-## Table of contents
-
 ## What is Emergent Gameplay?
 Complex gameplay that emerges from the interaction of simple game mechanics. Usually, these new gameplay mechanics emerge from players as they combine multiple simple mechanics to gain an advantage in the game. 
 
 
 Minecraft has many great examples of emergent gameplay:
-![Minecraft CPU](https://www.pcworld.com/wp-content/uploads/2023/04/minecraft-cpu.jpg "") 
+![Minecraft Mob Blocking](https://i.imgur.com/3kIdaDK.png)
+A simple example is how most players engage with PvE combat. In Minecraft, players have the ability to place blocks in the world, and generally speaking, mobs are not able to destroy or get past these blocks if their path is blocked. So, many players naturally adopt a combat strategy of using blocks to control mob movement and prevent them from getting close. This is emergent gameplay as it's the product of multiple simple game mechanics, and because the gameplay mechanic of using blocks in combat was not explicitly added as a mechanic by the developers. 
 
+![Minecraft CPU](https://www.pcworld.com/wp-content/uploads/2023/04/minecraft-cpu.jpg) 
+https://www.youtube.com/watch?v=FDiapbD0Xfg
 
-Show gif of water pouring down crops in MInecraft
-Image of barricading monsters behind blocks
-In a sense, the game is mostly emergent gameplay. Minecraft provides the player with vast worlds full of interesting th…players too harshly for getting hit, which incentivizes overly safe and boring playstyles, like finding a single powerful strategy for combat encounters and never trying anything else, instead of mixing things up
-in a fun way. However, I didn't want to focus on those, because I'd rather talk about the successes of developers, not the failures. 
+Emergent gameplay can also be so, so incredibly complex. Some people, using a relatively simple set of logic devices (redstone), have even created 8-bit processors within the game. Yes, actual 8-bit processors, capable of running simple programs like Snake. 
 
-filling minecarts with swords and other sharp objects and then sending them downhill and around a sharp corner, flinging its contents like projectiles. 
-
-
-
+In a sense, the game is mostly emergent gameplay. Minecraft provides the player with vast worlds full of interesting things, but never tells the player what they're meant to do with any of it; instead, that decision is left to the player and their imagination. 
 
 
 
-First things first, frontmatter is where you store important information about your article post. Some of the essential frontmatter configuration options for blog posts include title, description, pubDate, author, featured, draft, tags, and heroImage. Title and description are particularly essential for search engine optimization (SEO).
 
-> Read more about frontmatter and its usage in [astro documentation](https://docs.astro.build/en/guides/markdown-content/).
 
-Here are the default frontmatter configuration options for blog posts:
 
-| Property          | Description                                                                                       | Remark                                        |
-| ----------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| **_title_**       | Title of the post. (h1)                                                                           | required<sup>\*</sup>                         |
-| **_description_** | Description of the post. Used in post excerpt and site description of the post.                   | required<sup>\*</sup>                         |
-| **_pubDate_**     | Published datetime in ISO 8601 format.                                                            | required<sup>\*</sup>                         |
-| **_author_**      | Author of the post.                                                                               | default = SITE.author                         |
-| **_featured_**    | Whether or not display this post in featured section of home page                                 | default = false                               |
-| **_draft_**       | Mark this post 'unpublished'.                                                                     | default = false                               |
-| **_tags_**        | Related keywords for this post. Written in array yaml format.                                     | default = others                              |
-| **_heroImage_**   | Thumbnail of the post. Will be the OG image of the post. Useful for social media sharing and SEO. | default = SITE.ogImage or generated SVG image |
 
-The `title`, `description` and `pubDate` are required fields in frontmatter and must be specified.
+![DF Worldmap](https://i.imgur.com/9S9XuZv.png)
+A game near and dear to me is Dwarf Fortress. Similarly to Minecraft, it provides you (the wrathful god of this little universe) the power to create whole worlds, full of complex geography, geology, history, civilizations, secrets, and so on. You can then create your own fortress, and build it from the ground down (dwarves hate the surface). There are countless interesting little mechanics, such as digging, building, climbing, falling, swimming in water, burning in lava, doors, levers, fluid pumps, and so on. From these countless mechanics, new gameplay emerges:
 
-Title and description (excerpt) are important for search engine optimization (SEO).
+Players dig moats and fill them with water,
+![DF Moat](https://steamuserimages-a.akamaihd.net/ugc/2052004474090439068/29B54E73ECC4DC0E9F1B61360AE2A9FC870025C9/)
 
-If you there's no specified `tags` in a blog post, the default tag `others` will be used as a tag for that post. You can set the default tag in the `/src/content/config.ts` file.
+Or construct complex "mist generators" that spritz dwarves with nice refreshing mist as they walk by
+![DF Mist Generator](https://preview.redd.it/dwarves-using-mist-generator-as-bath-tub-v0-1ehewcwf21ga1.png?width=758&format=png&auto=webp&s=1642455223ac839f396fcf65076d91fd684b92d3)
 
-```ts
-// src/contents/config.ts
-export const blogSchema = z.object({
-    // ---
-    // replace "others" with whatever you want
-    tags: z.array(z.string()).default(["others"])
-});
-```
+or, as I have personally witnessed in many players' fortresses, a lava pit for disposing of overly demanding royalty. It's Dwarven tradition.
 
-### Example of Frontmatter data
+There are countless examples of emergent gameplay in this game. I think the favorite example I heard was from a player who was trying to level up his blacksmith dwarf so he'd produce better gear. He was making the blacksmith produce endless amounts of knives made of cheap glass, and then he'd have the dwarf dump these garbage swords into a minecart atop a slope. Every so often, goblins would invade the fortress, so he would raise the drawbridges into the fortress and trick the goblins into taking a new path, near the blacksmith's workshop. When the goblins approached, he'd make the dwarf kick the minecart down the track, where it would rapidly gain speed and then turn a sharp corner, spilling all of its sharp glass knives at high velocity, right into the goblins. It wasn't particularly good for defense, but nonetheless, he found it incredibly amusing. Which I suppose takes me to my final point: the why. 
 
-Here is the sample frontmatter for a post.
-
-```yaml
-# src/contents/sample-post.md
----
-title: The title of the post
-author: your name
-pubDate: 2023-03-25
-featured: true
-draft: false
-tags:
-    - example
-    - tags
-heroImage: ""
-description: This is the example description of the example post.
----
-```
-
-## Adding Table of Contents
-
-By default, the Astro Lane theme does not include any table of contents in a post. However, you can add a table of contents by writing "Table of contents" in H2 format (## in markdown) and placing it where you want it to appear in your post.
-
-```md
----
-# frontmatter settings
----
-
-Here are some sample text from the example above.
-
-## Table of contents
-
-<!-- The Rest of the content-->
-```
-
-## Image size and compression
-
-It's recommended that you compress any images you add to your blog post, as this can affect the overall performance of your website. Some recommended image compression tools include TinyPng, ShortPixel, TinyJPG, and Kraken.
-
--   [TinyPng](https://tinypng.com/)
--   [ShortPixel](https://shortpixel.com/online-image-compression)
--   [TinyJPG](https://tinyjpg.com/)
--   [Kraken](https://kraken.io/)
-
-## Headings suggestions
-
-In the Astro Lane theme, the title of the post is the main heading (H1) of the post. Therefore, it's recommended that you use H2 to H6 for the rest of the headings in your content for accessibility and SEO purposes.
-
-## OG Image/Hero Image
-
-If your post does not specify an OG image, the default OG image will be used. However, it's recommended that you specify an OG image related to your post in the frontmatter. The recommended size for an OG image is 1200 x 640 pixels. If a hero image is not specified, an OG image will be generated automatically same as the below.
-
-![This is an example of an OG image generated automatically if heroImage frontmatter is not provided](/adding-posts-in-astro-lane.png)
-_This is an example of an OG image generated automatically if heroImage frontmatter is not provided._
-
-To summarize, when creating a post using the Astro Lane theme, you need to ensure you have the essential frontmatter configuration options, add a table of contents if needed, compress any images you use, use proper headings, and specify an OG image if possible. By following these guidelines, you can create an excellent post that's optimized for SEO and accessibility.
+Why am I talking about emergent gameplay? Because some of the best and most memorable experiences naturally emerge from these complex interactions, and developers should always keep emergent gameplay in mind when designing their games. Emergent gameplay can also be a bad thing, emerging from a conflict between game mechanics. For example, some games punish players too harshly for getting hit, which incentivizes overly safe and boring playstyles, like finding a single powerful strategy for combat encounters and never trying anything else, instead of mixing things up in a fun way. However, I didn't want to focus on those, because I'd rather talk about the successes of developers, not the failures. 
