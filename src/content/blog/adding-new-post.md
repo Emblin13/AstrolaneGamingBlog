@@ -1,7 +1,7 @@
 ---
 pubDate: 2023-04-23
 title: Adding posts in Astro Lane
-featured: true
+featured: false
 draft: false
 tags:
     - docs
