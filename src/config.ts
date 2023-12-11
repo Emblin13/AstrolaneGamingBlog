@@ -18,7 +18,7 @@ export const SITE: Site = {
 export const SOCIALS: SocialMediaObjects = [
     {
         name: "Github",
-        href: "https://github.com/christian-luntok/astro-lane/",
+        href: "https://github.com/Emblin13",
         icon: "ph:github-logo-duotone",
         title: `Follow ${SITE.author} on Github`,
         active: true
@@ -35,14 +35,14 @@ export const SOCIALS: SocialMediaObjects = [
         href: "https://github.com/christian-luntok/astro-lane/",
         icon: "ph:instagram-logo-duotone",
         title: `Follow ${SITE.author} on Instagram`,
-        active: true
+        active: false
     },
     {
         name: "LinkedIn",
         href: "https://github.com/christian-luntok/astro-lane/",
         icon: "ph:linkedin-logo-duotone",
         title: `Follow ${SITE.title} on LinkedIn`,
-        active: true
+        active: false
     },
     {
         name: "Mail",
@@ -56,7 +56,7 @@ export const SOCIALS: SocialMediaObjects = [
         href: "https://github.com/christian-luntok/astro-lane/",
         icon: "ph:twitter-logo-duotone",
         title: `Follow ${SITE.author} on Twitter`,
-        active: true
+        active: false
     },
     {
         name: "YouTube",
