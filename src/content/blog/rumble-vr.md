@@ -16,7 +16,7 @@ https://youtu.be/7UToAOTTMec
 
 In Rumble, you are a fighter with earthbending powers, dueling fellow earthbenders 1 on 1 in the arena. Much like an earthbender in Avatar, the Last Airbender, all of your abilities are activated with martials-arts style movements. You must use precise placement and rotation of your hands for everything you do (besides walking and voicechat control). There is no attack button, run button, or even jump button; all actions are performed with gestures.
 
-There are 20 base moves in the game.
+There are 17 base moves in the game.
 
 **4 ways to move:** Walk, run, dash, jump
 
